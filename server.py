@@ -3,7 +3,7 @@ Flask server for the Emotion Detection web application.
 """
 
 from flask import Flask, render_template, request
-from EmotionDetection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 
 app = Flask(__name__)
@@ -55,3 +55,4 @@ def emotion_detector_route():
 
 if __name__ == "__main__":
     app.run(host="localhost", port=5000)
+    
